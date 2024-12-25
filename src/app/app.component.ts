@@ -6,16 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'portfolio';
-  resumeScroll: boolean = false;
-
   ngOnInit(): void {
-    window.addEventListener('scroll', () => {
-      const footer = <HTMLElement>document.querySelector('.footer');
-    })
-  }
-
-  onResumeClick(event: string): void {
-    this.resumeScroll = true;
+    setTimeout(() => {
+      window.location.href="https://venkat-kishor-padmanaban.vercel.app/";
+    }, 3000);
   }
 }
